@@ -1,0 +1,9 @@
+{% block header %}
+  <h1>{% block title %}empleado{% endblock %}</h1>
+{% endblock %}
+{% block content %}
+
+{% for a in em %}
+  <h4>{{ a['first_name'] }}</h4> 
+  {% endfor %} 
+{% endblock %}
