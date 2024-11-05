@@ -1,0 +1,9 @@
+{% block header %}
+  <h1>{% block title %}trabajo{% endblock %}</h1>
+{% endblock %}
+{% block content %}
+
+{% for t in tr%}
+  <h4>{{ t['job_title'] }}</h4> 
+  {% endfor %} 
+{% endblock %}
