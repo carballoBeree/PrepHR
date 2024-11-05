@@ -1,0 +1,9 @@
+{% block header %}
+  <h1>{% block title %}departamento{% endblock %}</h1>
+{% endblock %}
+{% block content %}
+
+{% for d in de%}
+  <h4>{{ d['department_name'] }}</h4> 
+  {% endfor %} 
+{% endblock %}
