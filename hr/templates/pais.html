@@ -1,0 +1,9 @@
+{% block header %}
+  <h1>{% block title %}pais{% endblock %}</h1>
+{% endblock %}
+{% block content %}
+
+{% for p in pa %}
+  <h4>{{ p['country_name'] }}</h4> 
+  {% endfor %} 
+{% endblock %}
